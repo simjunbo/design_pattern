@@ -7,3 +7,5 @@
   - Composite : 재귀적인 구조를 갖는 패턴
   - Factory Method : Iterator 인스턴스를 작성할 때 Factory Method 패턴이 사용되는 경우도 있다.
 ![1000px-iterator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46610362-83d8b700-cb45-11e8-9ab8-e673f4326976.png)
+
+## Adapter 패턴
