@@ -47,6 +47,9 @@
 ## Factory Method 패턴 (하위 클래스에서 인스턴스 작성하기)
 - 인스턴스를 생성하는 공장을 Template Method 패턴으로 구성한 것이 Factory Method 패턴이다.
 - 인스턴스 생성을 위한 골격(framework)과 실제의 인스턴스 생성의 클래스를 분리할 수 있다.
+- Factory Method를 사용하면 어떤 이점이 있을까?
+  - 결합도는 클래스의 변경점이 생겼을 때 얼마나 다른 클래스에 영향을 주는가이다.
+  - Factory Method 패턴을 사용하면 직접 객체를 생성해 사용하는 것을 방지하고 서브클래스로 위임하기 때문에 보다 효율적인 코드 제어를 할 수 있고 의존성을 제거한다.
 - 관련 패턴
   - Template Method : Factory Method 패턴은 Template Method 패턴의 전형적인 응용이다.
   - Singleton : Creator 역할을 수행하는 클래스는 대부분 Singleton 패턴으로 만들 수 있다. 프로그램 안에서 인스턴스가 복수로 존재할 필요는 거의 없기 때문이다.
