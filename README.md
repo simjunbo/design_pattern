@@ -6,7 +6,7 @@
   - Visitor : Iterator 패턴은 집합체에서 하나씩 요소를 꺼내서 세는 것이다. Visitor 패턴을 사용하면 하나씩 세면서 동시에 정해진 처리가 가능하다.
   - Composite : 재귀적인 구조를 갖는 패턴
   - Factory Method : Iterator 인스턴스를 작성할 때 Factory Method 패턴이 사용되는 경우도 있다.
-![1000px-iterator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46610362-83d8b700-cb45-11e8-9ab8-e673f4326976.png)
+![46610362-83d8b700-cb45-11e8-9ab8-e673f4326976](https://user-images.githubusercontent.com/7076334/46743294-b1f3fd80-cce3-11e8-9be0-0ac977570621.png)
 
 ## Adapter 패턴 (바꿔서 재이용)
 - 제공되고 있는 것과 필요한 것 사이를 연결해주는 것이 어뎁터 패턴의 역할이다.
@@ -56,4 +56,10 @@
   - Composite : Product 역할에 Composite 패턴을 적용할 수도 있다.
   - Iterator : Iterator 패턴에서 iterator 메소드가 Iterator의 인스턴스를 작성할 때 Factory Method 패턴이 사용되는 경우가 있다.
 
-![factory_method_uml_class_diagram](https://user-images.githubusercontent.com/7076334/46737556-c382d880-ccd6-11e8-8e5e-b6222bee1500.png)
+![46737556-c382d880-ccd6-11e8-8e5e-b6222bee1500](https://user-images.githubusercontent.com/7076334/46743237-95f05c00-cce3-11e8-91e6-f7687d4f5f85.png)
+
+## Singleton (인스턴스 한 개만 만들기)
+- 지정한 클래스의 인스턴스가 '절대로' 1개밖에 존재하지 않는 것을 '보증'하고 싶을 때
+- 인스턴스가 1개밖에 존재하지 않는 것을 프로그램 상에서 표현하고 싶을 때
+
+![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
