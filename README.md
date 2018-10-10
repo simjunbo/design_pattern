@@ -68,3 +68,12 @@
   - Abstract Facctory, Builder, Facade, Prototype
 
 ![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
+
+## Prototype
+- 종류가 너무 많아 클래스로 정리되지 않는 경우
+- 클래스로부터 인스턴스 생성이 어려운 경우
+- framework와 생성할 인스턴스를 분리하고 싶은 경우
+
+
+
+![1_zz5_u5kmjusw5wsbp9gmgw](https://user-images.githubusercontent.com/7076334/46749404-99d6ab00-ccf0-11e8-9ecf-8e8b5ed526d1.png)
