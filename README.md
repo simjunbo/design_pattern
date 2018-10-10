@@ -61,5 +61,9 @@
 ## Singleton (인스턴스 한 개만 만들기)
 - 지정한 클래스의 인스턴스가 '절대로' 1개밖에 존재하지 않는 것을 '보증'하고 싶을 때
 - 인스턴스가 1개밖에 존재하지 않는 것을 프로그램 상에서 표현하고 싶을 때
-
+- Singleton을 사용하면 어떤 이점이 있을까?
+  - 복수의 인스턴스가 존재하면 인스턴스들이 서로 영향을 미치고, 뜻하지 않은 버그가 발생할 가능성이 있다. 그러나 인스턴스가 1개 밖에 없다라는 보증이 있으면 그 전제조건 아래에서 프로그래밍 할 수 있다.
+  - 
+- 관련 패턴 (인스턴스가 하나인 경우가 많다.)
+  - Abstract Facctory, Builder, Facade, Prototype
 ![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
