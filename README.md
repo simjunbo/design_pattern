@@ -47,6 +47,10 @@
 ## Factory Method 패턴 (하위 클래스에서 인스턴스 작성하기)
 - 인스턴스를 생성하는 공장을 Template Method 패턴으로 구성한 것이 Factory Method 패턴이다.
 - 인스턴스 생성을 위한 골격(framework)과 실제의 인스턴스 생성의 클래스를 분리할 수 있다.
+- 관련 패턴
+  - Template Method : Factory Method 패턴은 Template Method 패턴의 전형적인 응용이다.
+  - Singleton : Creator 역할을 수행하는 클래스는 대부분 Singleton 패턴으로 만들 수 있다. 프로그램 안에서 인스턴스가 복수로 존재할 필요는 거의 없기 때문이다.
+  - Composite : Product 역할에 Composite 패턴을 적용할 수도 있다.
+  - Iterator : Iterator 패턴에서 iterator 메소드가 Iterator의 인스턴스를 작성할 때 Factory Method 패턴이 사용되는 경우가 있다.
 
 ![factory_method_uml_class_diagram](https://user-images.githubusercontent.com/7076334/46737556-c382d880-ccd6-11e8-8e5e-b6222bee1500.png)
-
