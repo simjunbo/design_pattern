@@ -9,3 +9,15 @@
 ![1000px-iterator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46610362-83d8b700-cb45-11e8-9ab8-e673f4326976.png)
 
 ## Adapter 패턴
+- 제공되고 있는 것과 필요한 것 사이를 연결해주는 것이 어뎁터 패턴의 역할이다.
+- '이미 제공되어 있는 것'과 '필요한 것' 사이의 '차이'를 없애주는 디자인 패턴
+- Adapter 패턴은 Wrapper 패턴으로 불리기도 한다.
+- Adapter 패턴은 두가지 종류가 있다.
+  - 클래스에 의한 Adapter 패턴(상속을 위한 Adapter 패턴)
+  - 인스턴스에 의한 Adapter 패턴(위임을 사용한 Adapter 패턴)
+
+# ClassAdapter 패턴
+![classadapter](https://user-images.githubusercontent.com/7076334/46731986-28363700-ccc7-11e8-981a-c11c5be1f578.png)
+
+# ObjecetAdapter 
+![objectadapter](https://user-images.githubusercontent.com/7076334/46731987-2a989100-ccc7-11e8-9775-70b30c4927d2.png)
