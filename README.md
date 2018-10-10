@@ -1,4 +1,4 @@
-## Iterator 패턴
+## Iterator 패턴 (순서대로 지정해서 처리)
 - Iterator 패턴이란, 무엇인가 많이 모여있는 것들을 순서대로 지정하면서 전체를 검색하는 처리를 실행하기 위한 것
 - for문을 이용하면 좋을텐데 왜 외부에 Iterator 역할 같은 것을 만들어서 사용 할까?
   - Iterator를 사용함으로써 구현과 분리해서 하나씩 셀 수 있기 때문이다.
@@ -8,7 +8,7 @@
   - Factory Method : Iterator 인스턴스를 작성할 때 Factory Method 패턴이 사용되는 경우도 있다.
 ![1000px-iterator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46610362-83d8b700-cb45-11e8-9ab8-e673f4326976.png)
 
-## Adapter 패턴
+## Adapter 패턴 (바꿔서 재이용)
 - 제공되고 있는 것과 필요한 것 사이를 연결해주는 것이 어뎁터 패턴의 역할이다.
 - '이미 제공되어 있는 것'과 '필요한 것' 사이의 '차이'를 없애주는 디자인 패턴
 - Adapter 패턴은 Wrapper 패턴으로 불리기도 한다.
@@ -29,8 +29,9 @@
 ### 2) ObjecetAdapter (위임)
 ![objectadapter](https://user-images.githubusercontent.com/7076334/46731987-2a989100-ccc7-11e8-9775-70b30c4927d2.png)
 
-## Template Method 패턴
+## Template Method 패턴 (하위 클래스에서 구체적으로 처리하기)
 - 상위 클래스에서 처리의 뼈대를 결정하고, 하위 클래스에서 그 구체적인 내용을 결정하는 디자인 패턴
+- Template Method에 final을 사용하면 하위 클래스에서 오버라이드 할 수 없다.
 - Template Method를 사용하면 어떤 이점이 있을까?
   - 상위 클래스의 템플릿 메소드에서 알고리즘이 기술되어 있으므로, 하위 클래스측에는 알고리즘을 일일이 기술할 필요가 없다. (로직은 공통화)
   - "상위 클래스형의 변수에 하위 클래스의 어떠한 인스턴스를 대입해도 제대로 작동할 수 있어야 한다. (LSP)"
@@ -42,4 +43,10 @@
 - 상위 클래스에서 기술을 많이 하면 하위 클래스에서는 기술하기 편하게 되지만, 하위 클래스의 자유는 줄어들게 된다. 반대로 상위 클래스에서 기술을 적게하면 하위 클래스의 기술이 어렵게 되고, 각각의 하위 클래스에서 처리가 중복될지도 모른다.
 
 ![420px-template_method_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46735610-ac8db780-ccd1-11e8-8f96-dd50819be1c6.png)
+
+## Factory Method 패턴 (하위 클래스에서 인스턴스 작성하기)
+- 인스턴스를 생성하는 공장을 Template Method 패턴으로 구성한 것이 Factory Method 패턴이다.
+- 인스턴스 생성을 위한 골격(framework)과 실제의 인스턴스 생성의 클래스를 분리할 수 있다.
+
+![factory_method_uml_class_diagram](https://user-images.githubusercontent.com/7076334/46737556-c382d880-ccd6-11e8-8e5e-b6222bee1500.png)
 
