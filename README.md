@@ -16,8 +16,8 @@
   - 클래스에 의한 Adapter 패턴(상속을 위한 Adapter 패턴)
   - 인스턴스에 의한 Adapter 패턴(위임을 사용한 Adapter 패턴)
 
-# ClassAdapter 패턴
+### ClassAdapter 패턴
 ![classadapter](https://user-images.githubusercontent.com/7076334/46731986-28363700-ccc7-11e8-981a-c11c5be1f578.png)
 
-# ObjecetAdapter 
+### ObjecetAdapter 
 ![objectadapter](https://user-images.githubusercontent.com/7076334/46731987-2a989100-ccc7-11e8-9775-70b30c4927d2.png)
