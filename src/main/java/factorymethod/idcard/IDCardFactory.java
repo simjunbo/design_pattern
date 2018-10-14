@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ConcreateCreator(구체적인 작성자)
+ * ConcreteCreator(구체적인 작성자)
  */
 public class IDCardFactory extends Factory {
 	private List owners = new ArrayList();

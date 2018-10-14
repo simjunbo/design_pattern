@@ -3,7 +3,7 @@ package prototype.anonymous;
 import prototype.framework.Product;
 
 /**
- * ConcreatePrototpye(구체적인 원형)
+ * ConcretePrototpye(구체적인 원형)
  */
 public class MessageBox implements Product {
     private char decochar;

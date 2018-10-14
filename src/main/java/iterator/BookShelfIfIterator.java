@@ -1,7 +1,7 @@
 package iterator;
 
 /**
- * ConcreateIterator(구체적인 반복자)
+ * ConcreteIterator(구체적인 반복자)
  * Iterator가 결정한 인터페이스를 실제로 구현
  */
 public class BookShelfIfIterator implements Iterator {
