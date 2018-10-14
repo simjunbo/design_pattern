@@ -69,7 +69,7 @@
 
 ![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
 
-## Prototype
+## Prototype (Java는 java.lang.Cloneable 인터페이스를 구현할 필요가 있다.)
 - Prototype을 사용하면 사용하면 어떤 이점이 있을까?
   - 종류가 너무 많아 클래스로 정리되지 않는 경우
     - 종류가 많은 경우 각각의 클래스를 만들면 킄래스의 수가 너무 많아지기 때문에 소스 프로그램을 관리하기 힘들다.
@@ -85,5 +85,4 @@
   - Command : Command 패턴에 등장하는 명령을 복제하고 싶은 경우 Prototpye 패턴을 사용한다.
   
 ![1_zz5_u5kmjusw5wsbp9gmgw](https://user-images.githubusercontent.com/7076334/46749404-99d6ab00-ccf0-11e8-9ecf-8e8b5ed526d1.png)
-
 
