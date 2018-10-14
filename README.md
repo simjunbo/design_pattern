@@ -86,3 +86,14 @@
   
 ![1_zz5_u5kmjusw5wsbp9gmgw](https://user-images.githubusercontent.com/7076334/46749404-99d6ab00-ccf0-11e8-9ecf-8e8b5ed526d1.png)
 
+## Builder (복잡한 인스턴스 조립하기)
+- Builder를 사용하면 사용하면 어떤 이점이 있을까?
+  - Director 클래스가 자신이 이용하고 있는 ConcreteBuilder를 모르기 때문에 자유롭게 교체할 수 있다.
+- 관련 패턴
+  - Template Method : Builder 패턴에서는 Director 역할이 Builder를 제어한다. Template Method 패턴에서는 상위 클래스가 하위 클래스를 제어한다. (templateMethod)
+  - Composite : Builder 패턴에 의해 만들어진 생성물은 Composite 패턴이 되는 경우가 있다.
+  - Abstract Factory : Builder 패턴도, Abstract Factory 패턴도 복잡한 인스턴스를 생성한다.
+  - Facade : Builder 패턴의 Director 역할은Builder 역할의 복잡한 메소드를 조합해서 인스턴스를 구축하는 단순한 인터페이스(API)를 외부에 제공하는 것이다. Facade 패턴의 Facade 역할은 내부 모듈을 조합해서 작업하기 위한 단순한 인터페이스(API)를 외부에 제공한다.
+
+![700px-builder_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46916191-1ec40c00-cff2-11e8-8662-263b7259c92b.png)
+
