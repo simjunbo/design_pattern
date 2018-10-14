@@ -69,11 +69,20 @@
 
 ![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
 
-## Prototype
-- 종류가 너무 많아 클래스로 정리되지 않는 경우
-- 클래스로부터 인스턴스 생성이 어려운 경우
-- framework와 생성할 인스턴스를 분리하고 싶은 경우
-
-
-
+## Prototype (Java는 java.lang.Cloneable 인터페이스를 구현할 필요가 있다.)
+- Prototype을 사용하면 사용하면 어떤 이점이 있을까?
+  - 종류가 너무 많아 클래스로 정리되지 않는 경우
+    - 종류가 많은 경우 각각의 클래스를 만들면 킄래스의 수가 너무 많아지기 때문에 소스 프로그램을 관리하기 힘들다.
+  - 클래스로부터 인스턴스 생성이 어려운 경우
+    - 그림판에서 복잡한 그림을 그린 후, Copy & Paste
+  - framework와 생성할 인스턴스를 분리하고 싶은 경우
+    - 인스턴스의 복사(clone)를 실행하는 부분을 (Prototype, Client) framework로 설정하고, 구체적인 구현부 (Concreate Prototype)를 분리해서 의존도를 줄일 수 있다. 
+    - Client에서 Concreate Prototype을 구체적으로 선언할 필요가 없다.
+- 관련 패턴
+  - Flyweight : Prototpye 패턴에는 현재의 인스턴스와 같은 상태의 별도 인스턴스를 만들어 이용하지만, Flyweight 패턴에는 하나의 인스턴스를 복수의 장소에서 공유해서 사용한다.
+  - Memento : Memento 패턴은 스냅샷과 undo를 실행하기 위해 현재의 인스턴스 상태를 저장한다. (실행취소)
+  - Composite : Composite, Decorator 패턴을 많이 사용하면 복잡한 구조의 인스턴스가 동적으로 만들어지는데 이런 경우 Prototpye 패턴을 사용하면 편리하다.
+  - Command : Command 패턴에 등장하는 명령을 복제하고 싶은 경우 Prototpye 패턴을 사용한다.
+  
 ![1_zz5_u5kmjusw5wsbp9gmgw](https://user-images.githubusercontent.com/7076334/46749404-99d6ab00-ccf0-11e8-9ecf-8e8b5ed526d1.png)
+
