@@ -112,4 +112,7 @@
 
 ![677px-abstract_factory_uml svg](https://user-images.githubusercontent.com/7076334/46916822-d4935880-cffa-11e8-8df4-71ada9e65c00.png)
 
+## Bridge (기능 계층과 구현 계층 분리하기)
+
+![750px-bridge_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46918131-07444d80-d009-11e8-9e81-6ebb02bcb3b1.png)
 
