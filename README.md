@@ -97,3 +97,19 @@
 
 ![700px-builder_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46916191-1ec40c00-cff2-11e8-8662-263b7259c92b.png)
 
+## Abstract Factory (관련 부품을 조합해서 제품 만들기)
+- 추상적인 공장에서는 추상적인 부품을 조합해서 추상적인 제품을 만든다.
+- Template Meethod, Builder 패턴과 같이 Abstract Factory 패턴에서도 하위 클래스 단계에서 구체적인 구현을 실행한다.
+- Abstract Factory를 사용하면 사용하면 어떤 이점이 있을까?
+  - ConcreteFactory를 새로 추가하는것이 간단하다. (Client에서는 AbstractFactory와 AbstractProduct만 참고 하기 때문에)
+  - 하지만 Abstract Factory에 부품을 (Abstract Product)을 추가하는 것은 영향도가 높아서 수정범위가 높아진다.
+- 관련 패턴
+  - Builder : Abstract Factory 패턴은 인터페이스(API)가 정해져 있는 추상적인 부품을 조합하여 복잡한 구조를 가진 인스턴스를 만든다.
+  Builder 패턴은 단계적으로 큰 인스턴스를 만든다.
+  - Factory Method : Abstract Factory 패턴에서 제품이나 부품을 만드는 부분에 Factory Method 패턴으로 되는 경우가 있다.
+  - Composite : Abstract Factory 패턴에서 만들어진 제품이 Composite 패턴으로 되는 경우가 있다.
+  - Singleton : Abstract Factory 패턴의 구체적인 공장이 Singleton 패턴으로 되는 경우가 있다.
+
+![677px-abstract_factory_uml svg](https://user-images.githubusercontent.com/7076334/46916822-d4935880-cffa-11e8-8df4-71ada9e65c00.png)
+
+
