@@ -148,3 +148,15 @@
 
 ![strategy](https://user-images.githubusercontent.com/7076334/46949583-e63d3480-d0bc-11e8-9ea8-d837b1cec09b.gif)
 
+## Composite (그릇과 내용물을 동일시하기 - 폴더 구조)
+- 일반적으로 트리 구조로 된 데이터 구조는 Composite 패턴에 해당한다.
+- 사용자가 단일 객체와 복합 객체 모두 동일하게 다룬다.
+- Composite 사용하면 사용하면 어떤 이점이 있을까?
+  - 재귀형태로 동일한 자료형을 사용하기 때문에 구현이 줄어들고 새로운 클래스 추가에 용이하다.
+- 관련 패턴
+  - Command : Command 패턴에서 '매크로 커맨드'를 만들 때 Composite 패턴이 사용
+  - Visitor : Visitor 패턴은 Composite를 순환하면서 처리하는데 사용
+  - Decorator : Composite 패턴은 Composite, Leaf을 Component 역할로 동일시 한다. Decorator 패턴은 장식과 내용물을 동일시한다.
+  
+![480px-composite_uml_class_diagram_ fixed svg](https://user-images.githubusercontent.com/7076334/46953214-37065a80-d0c8-11e8-8f78-f95c58fcc3f7.png)
+
