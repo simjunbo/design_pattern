@@ -134,3 +134,17 @@
 
 ![750px-bridge_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46918131-07444d80-d009-11e8-9e81-6ebb02bcb3b1.png)
 
+## Strategy (알고리즘을 모두 바꾸기)
+- 알고리즘을 교체해서 같은 문제를 다른 방법으로도 쉽게 해결할 수 있도록 도와주는 패턴이 Strategy 패턴이다.
+- Strategy 사용하면 사용하면 어떤 이점이 있을까?
+  - 위임이라는 느슨한 연결을 사용하고 있으므로 알고리즘을 쉽게 교환할 수 있다.
+  - 프로그램의 동작 중에도 알고리즘을 교체할 수 있다. (런타임)
+- 관련 패턴
+  - Flyweight : ConcreteStrategy 역할은 Flyweight 패턴을 사용해서 복수의 장소에서 공유할 수도 있다.
+  - Abstract Factory : Strategy 패턴에서는 알고리즘을 모두 교체할 수 있다. Abstract Factory 패턴에서는 구체적인 공장, 부품, 제품을 모두 교체할 수 있다.
+  - State : Strategy 패턴도 State 패턴도 둘다 위임하는 곳을 교환하는 패턴이고 클래스 간의 관계도 매우 비슷하지만 두 패턴의 목적이 다르다.
+    - Strategy는 '알고리즘'을 표현하는 클래스를 작성해서 그것을 ConcreteStrategy 역할의 클래스로 처리한다. Strategy 패턴에서는 클래스를 교체할 수 있지만 필요하지 않으면 교체하지 않아도 된다.
+    - State는 '상태'를 표현하는 클래스를 작성해서 그것을 ConcreteStrategy 역할의 클래스로 한다. State 패턴에는 상태가 변화할 때마다 위임하는 곳의 클래스가 반드시 교체된다.
+
+![strategy](https://user-images.githubusercontent.com/7076334/46949583-e63d3480-d0bc-11e8-9ea8-d837b1cec09b.gif)
+
