@@ -160,3 +160,17 @@
   
 ![480px-composite_uml_class_diagram_ fixed svg](https://user-images.githubusercontent.com/7076334/46953214-37065a80-d0c8-11e8-8f78-f95c58fcc3f7.png)
 
+## Decorator (장식과 내용물을 동일시하기)
+- Decorator 패턴과 Composite 패턴은 재귀적인 구조를 취하는 저멩서 유사하지만 목적이 다르다.
+  - Decorator 패턴은 테두리 장식을 중복해서 기능을 추가해가는 것에 주안점을 두기 때문이다.
+- Decorator 사용하면 사용하면 어떤 이점이 있을까?
+  - 내용물을 바꾸지 않고 기능을 추가할 수 있다.
+  - 동적인 기능을 추가할 수 있다. (위임을 통한 느슨한 결합)
+  - 단순한 장식이라도 다양한 기능을 추가할 수 있다. (ex 토핑)
+  - 사용 되는곳 (java.io 패키지의 FileReader, BufferedReader 등)
+- 반면 단점으로 유사한 설질의 작은 클래스가 많이 만들어지는 결점이 있다.
+- 관련 패턴
+  - Adapter : Decorator 패턴은 내용물의 인터페이스를 변경하지 않고 장식을 만든다. Adapter 패턴은 다른 두 개의 인터페이스를 연결하기 위해 이용한다.
+  - Strategy : Decorator 패턴은 장식을 교체하거나 테두리 장식을 겹쳐서 기능을 추가한다. Strategy 패턴은 알고리즘을 교체해서 기능을 변경한다.
+
+![400px-decorator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46956801-2e665200-d0d1-11e8-91d1-b49abfa56e6b.png)
