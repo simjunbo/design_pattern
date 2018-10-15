@@ -76,8 +76,8 @@
   - 클래스로부터 인스턴스 생성이 어려운 경우
     - 그림판에서 복잡한 그림을 그린 후, Copy & Paste
   - framework와 생성할 인스턴스를 분리하고 싶은 경우
-    - 인스턴스의 복사(clone)를 실행하는 부분을 (Prototype, Client) framework로 설정하고, 구체적인 구현부 (Concreate Prototype)를 분리해서 의존도를 줄일 수 있다. 
-    - Client에서 Concreate Prototype을 구체적으로 선언할 필요가 없다.
+    - 인스턴스의 복사(clone)를 실행하는 부분을 (Prototype, Client) framework로 설정하고, 구체적인 구현부 (Concrete Prototype)를 분리해서 의존도를 줄일 수 있다. 
+    - Client에서 Concrete Prototype을 구체적으로 선언할 필요가 없다.
 - 관련 패턴
   - Flyweight : Prototpye 패턴에는 현재의 인스턴스와 같은 상태의 별도 인스턴스를 만들어 이용하지만, Flyweight 패턴에는 하나의 인스턴스를 복수의 장소에서 공유해서 사용한다.
   - Memento : Memento 패턴은 스냅샷과 undo를 실행하기 위해 현재의 인스턴스 상태를 저장한다. (실행취소)

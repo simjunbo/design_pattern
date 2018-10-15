@@ -1,4 +1,7 @@
-package strategy.another.strategy;
+package strategy.another.context;
+
+import strategy.another.strategy.ClientSide;
+import strategy.another.strategy.ServerSide;
 
 public abstract class Programmer {
 	private ClientSide clientSide;

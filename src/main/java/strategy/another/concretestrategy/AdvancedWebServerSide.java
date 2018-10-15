@@ -1,4 +1,10 @@
 package strategy.another.concretestrategy;
 
-public class AdvancedWebServerSide {
+import strategy.another.strategy.ServerSide;
+
+public class AdvancedWebServerSide implements ServerSide {
+
+	public String getServerProgramming() {
+		return "Java, Spring, Python";
+	}
 }

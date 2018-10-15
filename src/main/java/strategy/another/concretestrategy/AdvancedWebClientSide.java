@@ -1,4 +1,10 @@
 package strategy.another.concretestrategy;
 
-public class AdvancedWebClientSide {
+import strategy.another.strategy.ClientSide;
+
+public class AdvancedWebClientSide implements ClientSide {
+
+	public String getClientProgramming() {
+		return "Javascritp, CSS, HTML, AnguarJs";
+	}
 }
