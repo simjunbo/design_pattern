@@ -1,7 +1,5 @@
 package prototype;
 
-import prototype.anonymous.MessageBox;
-import prototype.anonymous.UnderlinePen;
 import prototype.framework.Manager;
 import prototype.framework.Product;
 
