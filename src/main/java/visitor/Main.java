@@ -1,5 +1,9 @@
 package visitor;
 
+import visitor.A1.FileFindVisitor;
+
+import java.util.Iterator;
+
 public class Main {
 	public static void main(String[] args) {
 		try {
@@ -31,6 +35,17 @@ public class Main {
 			park.add(new File("game.doc", 600));
 			park.add(new File("junk.mail", 700));
 			root.accept(new ListVisitor());
+
+			// A1
+			FileFindVisitor ffv = new FileFindVisitor(".html");
+			root.accept(ffv);
+			System.out.println("HTML files are:");
+			Iterator it = ffv.getFoundFiles();
+			while (it.hasNext()) {
+				File file = (File) it.next();
+				System.out.println(file.toString());
+			}
+
 		} catch (FileTreatmentException e) {
 			e.printStackTrace();
 		}
