@@ -203,6 +203,9 @@
   - Concretehandler가 '자신의 일에 집중할 수 있다.' (하나의 역할만 처리하면 된다.)
   - 해당 패턴을 사용하지 않는 경우 '위대한 사람 한명이 누가 요구를 처리해야할지 전부 결정' 해야 된다. (복잡해 진다.)
 - 요구와 처리자의 관계가 고정적이고 처리 속도가 상당히 중요한 경우에는 Chain of Responsibility를 사용하지 않는 편이 유효한 경우도 있다.
+- 관련 패턴
+  - Composite : Handler 역할에 Composite 패턴이 자주 등장한다.
+  - Command : Handler 역할에 대해서 제공되는 '요구'에는 Command 패턴이 사용되는 경우가 있다.
   
 ![chain](https://user-images.githubusercontent.com/7076334/47017037-29b2a400-d18c-11e8-9b1a-7ffc1fa8a0a1.gif)
 
