@@ -174,3 +174,26 @@
   - Strategy : Decorator 패턴은 장식을 교체하거나 테두리 장식을 겹쳐서 기능을 추가한다. Strategy 패턴은 알고리즘을 교체해서 기능을 변경한다.
 
 ![400px-decorator_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46956801-2e665200-d0d1-11e8-91d1-b49abfa56e6b.png)
+
+## Visitor (데이터 구조를 돌아다니면서 처리하기)
+- Visitor 패턴은 데이터 '구조'와 '처리'를 분리한다.
+- 새로운 처리를 추가하고 싶을 때는 '방문자'를 만들면 된다.
+- 더블 디스패치 (이중 분리)
+  - accept(Visitor)와 visit(element)는 정확히 반대의 관계에 있다.
+  - Visitor 패턴에는 ConreteElement 역할과 ConcreteVisitor 역할을 하는 한쌍에 의해 실제 처리가 결정된다.
+- Visitor 사용하면 사용하면 어떤 이점이 있을까?
+  - '반복 처리가 필요하면 데이터 구조 안에 루프를 사용하면 되지 어째서 accept나 visit 같은 복잡한 메소드를 호출 할까?'
+  - Visitor 패턴의 목적은 처리를 데이터 구조에서 분리하는 일이다.
+  - ConcreteVisitor는 ConcreteElement와는 독립적으로 개발할 수 있다.
+- OCP (Open-Closed Principle) 확장에는 열려 있고, 수정에는 닫혀있다.
+  - ConcreteVisitor 역할을 추가하는 것은 간단하다. 처리를 위한 ConcreteElement 역할을 수정할 필요는 없기 때문이다.
+  - ConcreteElement 역할의 추가는 곤란하다. 새로운 ConcreteElement가 추가된다면 ConcreteVisitor에 새로운 visit 메소드를 구현해야 된다.
+- Visitor(처리), Element(처리)
+- 관련 패턴
+  - Iterator : Iterator와 Visitor 패턴 모두 어떤 데이터 구조 상에서 처리를 실행한다. Iterator는 데이터 구조가 지니고 있는 요소를 하나씩 얻는데 사용하지만, Visitor는 데이터 구조가 지니고 있는 요소에 특정한 처리를 실행하는데 사용
+  - Composite : 방문처가 되는 데이터 구조는 Composite 패턴이 되는 경우가 많다. (재귀)
+  - Interpreter : Interpreter 패턴에서 visitor 패턴이 사용되는 경우가 있다.
+
+![200f0e3b512e09dd20](https://user-images.githubusercontent.com/7076334/47012601-82c80b00-d17f-11e8-8a64-e232ba224389.png)
+
+
