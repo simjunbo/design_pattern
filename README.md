@@ -188,7 +188,7 @@
 - OCP (Open-Closed Principle) 확장에는 열려 있고, 수정에는 닫혀있다.
   - ConcreteVisitor 역할을 추가하는 것은 간단하다. 처리를 위한 ConcreteElement 역할을 수정할 필요는 없기 때문이다.
   - ConcreteElement 역할의 추가는 곤란하다. 새로운 ConcreteElement가 추가된다면 ConcreteVisitor에 새로운 visit 메소드를 구현해야 된다.
-- Visitor(처리), Element(처리)
+- Visitor(처리), Element(구조)
 - 관련 패턴
   - Iterator : Iterator와 Visitor 패턴 모두 어떤 데이터 구조 상에서 처리를 실행한다. Iterator는 데이터 구조가 지니고 있는 요소를 하나씩 얻는데 사용하지만, Visitor는 데이터 구조가 지니고 있는 요소에 특정한 처리를 실행하는데 사용
   - Composite : 방문처가 되는 데이터 구조는 Composite 패턴이 되는 경우가 많다. (재귀)
