@@ -223,3 +223,16 @@
 ![b05180_01](https://user-images.githubusercontent.com/7076334/47022377-51a80480-d198-11e8-9684-625a37477470.png)
 
 ## Mediator (중개인을 통해서 처리하기)
+- 동료들은 모두 중개인에게만 보고 하고, 중개인만 동료들에게 지시를 내릴 수 있다.
+- 다수의 오브젝트(객체) 사이를 조정해야 할 경우 Mediator 패턴을 이용한다.
+- Mediator 사용하면 사용하면 어떤 이점이 있을까?
+  - 한곳에서 관리하기 때문에 효율적으로 자원관리를 할 수 있다.
+  - 객체간 직접적인 참조가 불필해지기 때문에 결합도가 낮다. (ConcreteColleague의 재사용성이 높아진다.)
+- ConcreteColleague 역할은 재이용하기 쉽지만 ConcreteMediator 역할은 재이용하기 어렵다. (어플리케이션의 의존도가 높다는 것은 재이용성이 낮다는 것이다.)
+- 반면 객체간의 로직이 복잡해지거나 형태가 자주 변경되는 경우 유지보수, 관리가 점점 어려워진다.
+- 관련 패턴
+  - Facade : Mediator 패턴에는 Mediator는 Colleague 역할의 중개자로써 주고받기를 수행한다. (쌍방향). Facade 패턴에서는 일방적으로 다른 역할을 이용해서 높은 레벨의 인터페이스(API)를 만들었다. (단방향)
+  - Observer : Mediator 역할과 Colleague 역할의 통신은 Observer 패턴을 사용해서 실행되는 경우가 있다.
+
+![mediator](https://user-images.githubusercontent.com/7076334/47061801-18aa7700-d20e-11e8-8373-e0be258f7a27.gif)
+
