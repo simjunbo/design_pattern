@@ -256,3 +256,22 @@
 ![500px-observer_w_update svg](https://user-images.githubusercontent.com/7076334/47081945-11538f80-d247-11e8-85af-cc3bf689549c.png)
 
 
+## Memento (상태를 저장하기)
+- Memento 사용하면 사용하면 어떤 이점이 있을까?
+  - undo(실행취소)
+  - redo(재 실행)
+  - history(작업 이력의 작성)
+  - snapshot(현재 상태의 저장)
+  - 어떤 시점의 인스턴스의 상태를 확실하게 기록해서 저장해 두면 나중에 인스턴스를 그 시점의 상태로 되돌릴 수 있다.
+- Memento의 역할
+  - wide interface(넓은 인터페이스) : 오브젝트의 상태를 원래의 상태로 돌리기 위해 필요한 정보를 모두 얻을 수 있다. 내부 상태를 알 수 있기 때문에 Originator 에서만 사용할 수 있다.
+  - narrow interface(좁은 인터페이스) : 외부의 Caretaker 역할에게 보여주는 것이다. 기능에 한계가 있기 떄문에 내부 상태가 외부에 공개되는 것을 방지한다.
+- 관련 패턴
+  - Command : Command 패턴을 사용해서 명령을 처리하는 경우 Memento 패턴을 사용해서 undo나 redo를 실행할 수 있다.
+  - Prototype : Memento 패턴에서는 인스턴스 복원을 위해 현재의 상태를 저장한다. Prototype 패턴에서는 현재의 인스턴스와 동일한 상태의 다른 인스턴스를 만들고, 인스턴스의 내용은 전부 복사된다.
+  - State : Memento 패턴에서는 인스턴스가 '상태'를 표현한다. State 패턴에서는 클래스가 '상태'를 표현한다.
+
+  
+
+![memento](https://user-images.githubusercontent.com/7076334/47085417-7f04b900-d251-11e8-8760-a9dbc205b222.gif)
+
