@@ -271,7 +271,19 @@
   - Prototype : Memento 패턴에서는 인스턴스 복원을 위해 현재의 상태를 저장한다. Prototype 패턴에서는 현재의 인스턴스와 동일한 상태의 다른 인스턴스를 만들고, 인스턴스의 내용은 전부 복사된다.
   - State : Memento 패턴에서는 인스턴스가 '상태'를 표현한다. State 패턴에서는 클래스가 '상태'를 표현한다.
 
-  
-
 ![memento](https://user-images.githubusercontent.com/7076334/47085417-7f04b900-d251-11e8-8760-a9dbc205b222.gif)
 
+## State (상태를 클래스로 표현하기)
+- 상태를 클래스로 표현하면 클래스를 교체해서 '상태의 변화'를 표현할 수 있고, 새로운 상태를 추가해야 될 때 무엇을 프로그램하면 좋을지 분명해 진다.
+- State 패턴에서는 '현재의 상태'에 대해서 if 문을 사용하지 않는다.
+- State 패턴을 사용할 경우 상태전환은 누가 관리해야 하는지 주의 해야 한다.
+- State 사용하면 사용하면 어떤 이점이 있을까?
+  - 상태 변환에 따른 행위 변경이 손쉽게 이루어진다.
+  - 객체 내부에서 상태값을 비교하는(if) 문장을 없앨 수 있다.
+  - 특정 상태와 관련된 행위들을 하나의 객체로 모아주는 역할을 한다.
+- 관련 패턴
+  - Singleton : ConcreteState 역할은 Singleton 패턴으로 구현되는 경우가 많다.
+  - Flyweigth : 상태를 표시하는 클래스는 인스턴스를 갖지 않는다. Flyweight 패턴을 사용해서 ConcreteState 역할의 복수의 Context 역할에서 공유할 수 있는 경우가 있다.
+  - Observer : Context의 상태를 넘겨줘서 State에서 Context 메소드를 호출하는 구조가 비슷하다.
+  
+![470px-state_design_pattern_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/47089189-32be7680-d25b-11e8-8473-9217f8944a70.png)
