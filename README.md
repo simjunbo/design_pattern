@@ -222,4 +222,4 @@
 
 ![b05180_01](https://user-images.githubusercontent.com/7076334/47022377-51a80480-d198-11e8-9684-625a37477470.png)
 
-
+## Mediator (중개인을 통해서 처리하기)
