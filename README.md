@@ -287,3 +287,16 @@
   - Observer : Context의 상태를 넘겨줘서 State에서 Context 메소드를 호출하는 구조가 비슷하다.
   
 ![470px-state_design_pattern_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/47089189-32be7680-d25b-11e8-8473-9217f8944a70.png)
+
+## Flyweight (동일한 것을 공유해서 낭비 없애기)
+- 이 디자인 패턴은 오브젝트를 '가볍게' 하기 위한 것이다. (메모리를 적게 사용하는 것이다.)
+- '인스턴스를 가능한 대로 공유시켜서 쓸데없이 new 하지 않도록 한다.'
+- Flyweight 사용하면 사용하면 어떤 이점이 있을까?
+  - 객체 생성을 하는 리소스와 시간을 줄일 수 있기 때문에 성능 향상
+  - 많은 객체를 만들때 메모리를 줄일 수 있다. (재귀)
+- 관련 패턴
+  - Proxy : Flyweight 패턴에서 인스턴스의 생성에 시간이 걸리는 경우, 인스턴스의 공유에 따라서 처리 속도가 향상된다.
+  - Composite : Flyweight 패턴을 사용해서 Composite 패턴의 Leaf 역할을 공유시킬 수 있는 경우가 있다.
+  - Singleton : FlyweightFactory 역할은 Singleton 패턴이 되는 경우가 있다.
+
+![flyweight](https://user-images.githubusercontent.com/7076334/47094578-6f439f80-d266-11e8-9b9f-f4226794297a.PNG)
