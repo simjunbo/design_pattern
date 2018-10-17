@@ -254,3 +254,5 @@
     - Observer 패턴에서는 Subject 역할의 상태변화를 Observer 역할에게 알리는 일, 알려서 동기화를 이루는 일에 주안점을 두고 있다.
     
 ![500px-observer_w_update svg](https://user-images.githubusercontent.com/7076334/47081945-11538f80-d247-11e8-85af-cc3bf689549c.png)
+
+
