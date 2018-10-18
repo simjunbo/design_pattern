@@ -341,3 +341,31 @@
   - Visitor : 구문 트리를 작성한 후 구문 트리의 각 노드를 순회하면서 처리를 실행할 때에는 Visitor 패턴이 사용되는 경우가 있다.
   
 ![interpreter_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/47134744-cd18cb80-d2e8-11e8-8e4c-a41f0e0daebe.png)
+
+## GOF에 의한 디자인 패턴의 분류
+  - 생성에 관한 패턴
+    - Abstract Factory
+    - Builder
+    - Factory Method
+    - Prototype
+    - Singleton
+  - 구조에 관한 패턴
+    - Adapter
+    - Bridge
+    - Composite
+    - Decorator
+    - Facade
+    - Flayweight
+    - Prxoy
+   - 행동에 관한 패턴
+    - Chain of Responsibility
+    - Command
+    - Interprter
+    - Iterator
+    - Mediator
+    - Memento
+    - Observer
+    - State
+    - Strategy
+    - Template Method
+    - Visitor
