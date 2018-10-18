@@ -318,3 +318,10 @@
   - Decorator : Decorator 패턴과 Proxy 패턴의 구현은 비슷하지만 목적이 다르다. Decorator 패턴의 목적은 새로운 기능 추가 이지만, Proxy의 목적은 본인의 작업을 대리인에게 위임해서 본인에 대한 엑세스를 줄이는 것이다.
     
 ![439px-proxy_pattern_diagram svg](https://user-images.githubusercontent.com/7076334/47128827-df394080-d2cd-11e8-9c84-b50f03a0279d.png)
+
+## Command (명령을 클래스로 표현하기)
+- 명령을 나타내는 클래스의 인스턴스로 하나의 '물건' 처럼 표현할 수 있다.
+- 명령의 집합을 저장해 두면 같은 명령을 재 실행할 수도 있고, 복수의 명령을 모아서 새로운 명령으로 재이용할 수도 있다.
+
+
+![command](https://user-images.githubusercontent.com/7076334/47131203-786d5480-d2d8-11e8-8c53-b1a31d9f524e.gif)
