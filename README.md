@@ -300,3 +300,28 @@
   - Singleton : FlyweightFactory 역할은 Singleton 패턴이 되는 경우가 있다.
 
 ![flyweight](https://user-images.githubusercontent.com/7076334/47094578-6f439f80-d266-11e8-9b9f-f4226794297a.PNG)
+
+## Proxy (필요해지면 만들기)
+- 대리인이 할 수 있는 일에는 한계가 있다. 범위를 넘는 일이 발생하면, 대리인은 본인한테 와서 상담을 해야 한다.
+- Proxy는 RealSubject가 필요해지면 그때 RealSubject를 생성한다.
+- Proxy 사용하면 사용하면 어떤 이점이 있을까?
+  - 기동 시점에 이용하지 않는 기능을 전부 초기화하면, 어플리케이션의 기동에 시간이 많이 걸린다. 그래서 사용하는 단계 때 처음으로 초기화를 시키면 속도를 올릴 수 있다. (lazy loading)
+  - Proxy와 RealSubject를 분할해서 부품화를 만들면, 개별적옹르 수정 할 수 있다. (divide & conquer)
+  - 지연 평가를 사용하고 싶지 않으면 Client에서 Proxy를 new 하지 않고 RealSubject를 new 하면 된다. (Subjecet interface를 공통으로 사용하기 때문에 가능)
+  - HTTP Proxy를 사용하면 캐쉬해서 어떤 페이지를 대신 취득할 수 있다. 유효 시간이 지났을 때 웹 서버에서 웹 페이지를 가지러 간다.
+- Proxy 종류
+  - Virtual Proxy(가상 프록시) : 인스턴스가 필요한 시점에서 생성, 초기화를 실행한다.
+  - Remote Proxy(원격 프록시) : RealSubject 역할이 네트워크의 상대 쪽에 있음에도 불고하고 자신의 옆에 있는 것처럼(투과적) 메소드를 호출할 수 있다. Java의 RMI가 여기에 해당한다.
+  - Access Proxy : 정해진 사용자이면 메소드 호출을 허가하지만, 그외에는 에러로 처리하는 Proxy 이다.
+- 관련 패턴
+  - Adapter : Adapter 패턴은 인터페이스가 서로 다른 오브젝트의 사이를 이어주는 역할을 한다. Proxy 패턴의 Proxy와 RealSubject 역할도 같다.
+  - Decorator : Decorator 패턴과 Proxy 패턴의 구현은 비슷하지만 목적이 다르다. Decorator 패턴의 목적은 새로운 기능 추가 이지만, Proxy의 목적은 본인의 작업을 대리인에게 위임해서 본인에 대한 엑세스를 줄이는 것이다.
+    
+![439px-proxy_pattern_diagram svg](https://user-images.githubusercontent.com/7076334/47128827-df394080-d2cd-11e8-9c84-b50f03a0279d.png)
+
+## Command (명령을 클래스로 표현하기)
+- 명령을 나타내는 클래스의 인스턴스로 하나의 '물건' 처럼 표현할 수 있다.
+- 명령의 집합을 저장해 두면 같은 명령을 재 실행할 수도 있고, 복수의 명령을 모아서 새로운 명령으로 재이용할 수도 있다.
+
+
+![command](https://user-images.githubusercontent.com/7076334/47131203-786d5480-d2d8-11e8-8c53-b1a31d9f524e.gif)
