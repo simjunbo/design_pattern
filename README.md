@@ -323,15 +323,22 @@
 - 명령을 나타내는 클래스의 인스턴스로 하나의 '물건' 처럼 표현할 수 있다.
 - Command 사용하면 사용하면 어떤 이점이 있을까?
   - 명령의 집합을 저장해 두면 같은 명령을 재 실행할 수도 있고, 복수의 명령을 모아서 새로운 명령으로 재이용할 수도 있다.
-  - 
 - 관련 패턴
   - Composite : Macro Command를 실현하기 위해 Composite 패턴이 사용되는 경우가 있다.
   - Memento : Command 역할의 이력을 저장하는 경우에 Memento 패턴이 사용되는 경우가 있다.
   - Prototype : 발생한 이벤트(작성한 명령)을 복제하는 경우에 Prototype 패턴이 사용되는 경우가 있다.
-
+  
 ![command](https://user-images.githubusercontent.com/7076334/47131203-786d5480-d2d8-11e8-8c53-b1a31d9f524e.gif)
 
 
-## Interpreter
-
+## Interpreter (문법규칙을 클래스로 표현하기)
+- Interpreter 사용하면 사용하면 어떤 이점이 있을까?
+  - 각 문법 규칙을 클래스로 표현하기 때문에 언어를 쉽게 구현할 수 있다.
+  - 문법이 클래스에 의해 표현되기 때문에 언어를 쉽게 변경하거나 확장할 수 있다.
+- 관련 패턴
+  - Composite : NonterminalExpresion 역할은 재귀적인 구조를 갖는 경우가 많다. (재귀)
+  - Flyweight : TerminalExpression 역할은 Flyweight 패턴을 사용해서 공유되는 경우가 있다.
+  - Visitor : 구문 트리를 작성한 후 구문 트리의 각 노드를 순회하면서 처리를 실행할 때에는 Visitor 패턴이 사용되는 경우가 있다.
+  
 ![interpreter_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/47134744-cd18cb80-d2e8-11e8-8e4c-a41f0e0daebe.png)
+
