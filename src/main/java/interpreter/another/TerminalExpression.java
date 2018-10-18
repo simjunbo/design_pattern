@@ -1,7 +1,7 @@
 package interpreter.another;
 
 /**
- * TerminalExpression
+ * TerminalExpression (문법의 종착역)
  */
 public class TerminalExpression implements Expression {
 	private String data;

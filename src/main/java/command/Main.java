@@ -12,7 +12,7 @@ import javax.swing.*;
  * Client(의뢰자)의 역할
  * Invoker(기동자)의 역할
  */
-public class Main extends JFrame implements ActionListener, MouseMotionListener, WindowListener {
+public class Main extends JFrame implements ActionListener, WindowListener {
 	// 그림 그린 이력
 	private MacroCommand history = new MacroCommand();
 	// 그림 그리는 영역
@@ -29,7 +29,21 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 		super(title);
 
 		this.addWindowListener(this);
-		canvas.addMouseMotionListener(this);
+
+		// Invoker (기동)
+		canvas.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				Command cmd = new DrawCommand(canvas, e.getPoint());
+				history.append(cmd);
+				cmd.execute();
+			}
+
+			@Override
+			public void mouseMoved(MouseEvent e) {
+			}
+
+		});
 		clearButton.addActionListener(this);
 
 		Box buttonBox = new Box(BoxLayout.X_AXIS);
@@ -49,17 +63,6 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 			history.clear();
 			canvas.repaint();
 		}
-	}
-
-	// MouseMotionListener용
-	public void mouseMoved(MouseEvent e) {
-	}
-
-	// Invoker (기동)
-	public void mouseDragged(MouseEvent e) {
-		Command cmd = new DrawCommand(canvas, e.getPoint());
-		history.append(cmd);
-		cmd.execute();
 	}
 
 	// WindowListener용
