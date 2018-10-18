@@ -357,7 +357,7 @@
     - Facade
     - Flayweight
     - Prxoy
-   - 행동에 관한 패턴
+  - 행동에 관한 패턴
     - Chain of Responsibility
     - Command
     - Interprter
