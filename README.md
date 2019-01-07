@@ -161,7 +161,7 @@
 ![480px-composite_uml_class_diagram_ fixed svg](https://user-images.githubusercontent.com/7076334/46953214-37065a80-d0c8-11e8-8f78-f95c58fcc3f7.png)
 
 ## Decorator (장식과 내용물을 동일시하기)
-- Decorator 패턴과 Composite 패턴은 재귀적인 구조를 취하는 저멩서 유사하지만 목적이 다르다.
+- Decorator 패턴과 Composite 패턴은 재귀적인 구조를 취하는  유사하지만 목적이 다르다.
   - Decorator 패턴은 테두리 장식을 중복해서 기능을 추가해가는 것에 주안점을 두기 때문이다.
 - Decorator 사용하면 사용하면 어떤 이점이 있을까?
   - 내용물을 바꾸지 않고 기능을 추가할 수 있다.
