@@ -23,11 +23,14 @@
 - 관련 패턴
   - Bridge : Adapter 패턴은 인터페이스(API)가 서로 다른 클래스들을 연결하는 패턴이지만, Bridge 패턴은 기능의 계층과 구현의 계층을 연결 시키는 패턴이다.
   - Decorate : Adapter 패턴은 인터페이스(API)의 차이를 조정하기 위한 패턴이지만, Decorator 패턴은 인터페이스(API)를 수정하지 않고 기능을 추가 하는 패턴이다.
+  
+![adapter-pattern-overview](https://user-images.githubusercontent.com/7076334/52349955-e944a200-2a6a-11e9-8d20-6966df0df9ab.png)
+
 ### 1) ClassAdapter 패턴 (상속)
-![classadapter](https://user-images.githubusercontent.com/7076334/46731986-28363700-ccc7-11e8-981a-c11c5be1f578.png)
+![classadapter](https://user-images.githubusercontent.com/7076334/52349972-f06bb000-2a6a-11e9-8022-2d48aff9cf38.jpg)
 
 ### 2) ObjecetAdapter (위임)
-![objectadapter](https://user-images.githubusercontent.com/7076334/46731987-2a989100-ccc7-11e8-9775-70b30c4927d2.png)
+![objectadapter](https://user-images.githubusercontent.com/7076334/52349960-ec3f9280-2a6a-11e9-99d2-698ee71e5df6.jpg)
 
 ## Template Method 패턴 (하위 클래스에서 구체적으로 처리하기)
 - 상위 클래스에서 처리의 뼈대를 결정하고, 하위 클래스에서 그 구체적인 내용을 결정하는 디자인 패턴
