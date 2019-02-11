@@ -1,7 +1,6 @@
 package state2.context;
 
 import state2.concretestate.StateOff;
-import state2.concretestate.StateOn;
 import state2.state.State;
 
 /**
@@ -24,7 +23,7 @@ public class Light {
 
 	public static void main(String[] args) {
 		Light light = new Light();
-		light.setState(new StateOn());
 		light.onButtonPushed();
+		light.offButtonPushed();
 	}
 }
