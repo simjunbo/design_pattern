@@ -198,7 +198,7 @@
   - Composite : 방문처가 되는 데이터 구조는 Composite 패턴이 되는 경우가 많다. (재귀)
   - Interpreter : Interpreter 패턴에서 visitor 패턴이 사용되는 경우가 있다.
 
-![200f0e3b512e09dd20](https://user-images.githubusercontent.com/7076334/47012601-82c80b00-d17f-11e8-8a64-e232ba224389.png)
+![515px-visitordiagram svg](https://user-images.githubusercontent.com/7076334/52636475-0f0cf380-2f10-11e9-87c5-077a268b3ad1.png)
 
 ## Chain of Responsibility (책임 떠넘기기)
 - 어떤 요청이 발생했을 때 그 요청을 처리할 오브젝트를 직접 결정할 수 없는 경우, 복수의 오브젝트(객체)를 사슬(chain) 처럼 연결해 두면, 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법.
