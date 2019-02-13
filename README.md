@@ -201,7 +201,7 @@
 ![515px-visitordiagram svg](https://user-images.githubusercontent.com/7076334/52636475-0f0cf380-2f10-11e9-87c5-077a268b3ad1.png)
 
 ## Chain of Responsibility (책임 떠넘기기)
-- 어떤 요청이 발생했을 때 그 요청을 처리할 오브젝트를 직접 결정할 수 없는 경우, 복수의 오브젝트(객체)를 사슬(chain) 처럼 연결해 두면, 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법.
+- 어떤 요청이 발생했을 때 그 요청을 처리할 오브젝트를 직접 결정할 수 없는 경우, 복수의 오브젝트(객체)를 사슬(chain) 처럼 연결해 두면, 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법. (ex try-catch-finally)
 - Chain of Responsibility 패턴의 포인트는 요구를 하는 사람 (Client)과 요구를 처리하는 사람(Concretehandler 역할)을 유연하게 연결하는 것이다.
 - Chain of Responsibility 사용하면 사용하면 어떤 이점이 있을까?
   - Concretehandler가 '자신의 일에 집중할 수 있다.' (하나의 역할만 처리하면 된다.)
