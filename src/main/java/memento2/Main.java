@@ -9,6 +9,7 @@ public class Main {
         CareTaker careTaker = new CareTaker();
 
         originator.setState("State #1");
+        careTaker.add(originator.saveStateToMemento());
         originator.setState("State #2");
         careTaker.add(originator.saveStateToMemento());
 
