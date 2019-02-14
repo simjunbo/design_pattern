@@ -5,16 +5,19 @@ package mediator2;
  */
 public class Main {
 	public static void main(String[] args) {
-		Com_1 test1 = new Com_1();
-		Com_2 test2 = new Com_2();
+		Com_1 com1 = new Com_1();
+		Com_2 com2 = new Com_2();
 
-		Mediator test_M1 = new Mediator(test1);
-		Mediator test_M2 = new Mediator(test2);
+		// register
+		Imediator im1 = new Mediator(com1);
+		Imediator im2 = new Mediator(com2);
 
-		test_M1.send("COM 1", "hello world!");
-		test_M2.send("COM 2", "hello world!");
+		// send
+		im1.send("COM 1", "hello world!");
+		im2.send("COM 2", "hello world!");
 
-		test1.send("hello world!");
-		test2.send("hello world!");
+
+		com1.send("hello world!");
+		com2.send("hello world!");
 	}
 }

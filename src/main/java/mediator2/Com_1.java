@@ -6,10 +6,11 @@ package mediator2;
 public class Com_1 extends Colleague {
 
 	private String name = "COM 1";
+	private String to = "COM_2";
 
 	@Override
 	public void send(String event) {
-		mediator.send(name, event);
+		mediator.send(to, event);
 	}
 
 	@Override

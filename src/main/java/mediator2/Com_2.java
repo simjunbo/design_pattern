@@ -4,12 +4,12 @@ package mediator2;
  * ConcreteColleague
  */
 public class Com_2 extends Colleague {
-
 	private String name = "COM 2";
+	private String to = "COM_1";
 
 	@Override
 	public void send(String event) {
-		mediator.send(name, event);
+		mediator.send(to, event);
 	}
 
 	@Override

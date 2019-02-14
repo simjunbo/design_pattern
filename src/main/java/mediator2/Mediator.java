@@ -7,15 +7,15 @@ import java.util.ArrayList;
  */
 public class Mediator implements Imediator {
 
-	private ArrayList<Colleague> TestArray = new ArrayList<Colleague>();
+	private ArrayList<Colleague> colleagues = new ArrayList<Colleague>();
 
 	public Mediator(Colleague e) {
 		e.setMediator(this);
-		TestArray.add(e);
+		colleagues.add(e);
 	}
 
 	public void send(String colleague, String event) {
-		for (Colleague s : TestArray) {
+		for (Colleague s : colleagues) {
 			if (s.getString() == colleague) {
 				s.receive(colleague, event);
 			}
