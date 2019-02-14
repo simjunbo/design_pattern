@@ -190,7 +190,7 @@
   - Visitor 패턴의 목적은 처리를 데이터 구조에서 분리하는 일이다.
   - ConcreteVisitor는 ConcreteElement와는 독립적으로 개발할 수 있다.
 - OCP (Open-Closed Principle) 확장에는 열려 있고, 수정에는 닫혀있다.
-  - ConcreteVisitor 역할을 추가하는 것은 간단하다. 처리를 위한 ConcreteElement 역할을 수정할 필요는 없기 때문이다.
+  - ConcreteVisitor 역할을 추가하는 것은 간단하다.(여러 클래스로) 처리를 위한 ConcreteElement 역할을 수정할 필요는 없기 때문이다.
   - ConcreteElement 역할의 추가는 곤란하다. 새로운 ConcreteElement가 추가된다면 ConcreteVisitor에 새로운 visit 메소드를 구현해야 된다.
 - Visitor(처리), Element(구조)
 - 관련 패턴
