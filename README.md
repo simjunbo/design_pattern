@@ -253,7 +253,7 @@
   - java.util.Observer 인터페이스는 public void update(Observable obj, Object arg)를 지원한다. 
   - Subject 역할을 하는 Observable(class)를 사용해야 되는데 단일 상속이기 때문에 Subject 역할을 하는 클래스가 이미 다른 클래스의 하위 클래스 일 경우 Observable로 사용할 수 없다.
 - 관련 패턴
-  - Mediator : Mediator 역할과 Colleague 역할의 통신에 OBserver 패턴을 사용하는 경우가 있다.
+  - Mediator : Mediator 역할과 Colleague 역할의 통신에 Observer 패턴을 사용하는 경우가 있다.
     - Mediator 패턴에서도 상태변화를 알리지만, 그것은 Colleague 역할의 조정이라는 목적으로 동작하고 있는 일부에 지나지 않는다.
     - Observer 패턴에서는 Subject 역할의 상태변화를 Observer 역할에게 알리는 일, 알려서 동기화를 이루는 일에 주안점을 두고 있다.
     
