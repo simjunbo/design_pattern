@@ -73,7 +73,7 @@
 ![1200px-singleton_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/46743175-735e4300-cce3-11e8-9d71-d3c314124e16.png)
 
 ## Prototype (Java는 java.lang.Cloneable 인터페이스를 구현할 필요가 있다.)
-- Prototype을 사용하면 사용하면 어떤 이점이 있을까?
+- Prototype을 사용하면 어떤 이점이 있을까?
   - 종류가 너무 많아 클래스로 정리되지 않는 경우
     - 종류가 많은 경우 각각의 클래스를 만들면 클래스의 수가 너무 많아지기 때문에 소스 프로그램을 관리하기 힘들다.
   - 클래스로부터 인스턴스 생성이 어려운 경우
@@ -246,14 +246,14 @@
 - 추상 클래스나 인터페이스를 사용해서 구상 클래스로부터 추상 메소드를 분리한다.
 - 인수로 인스턴스를 전달할 때, 구상 클래스의 형태로 하지 않고 추상 클래스나 인터페이스의 형태로 해 둔다.
 - 일반적으로 ConcreteObserver 역할의 클래스를 설계할 경우 update 메소드가 호출되는 순서가 변해도 문제가 일어나지 않도록 해야한다.
-- Observer는 '관찰자'라는 의미이지만 실제로 Observer는 능동적으로 '관찰' 하는 것이 아니고, Sbject 역할로부터 '전달'되는 것을 수동적으로 기다리고 있다. (Publish-Subscribe 패턴이라고도 한다.)
+- Observer는 '관찰자'라는 의미이지만 실제로 Observer는 능동적으로 '관찰' 하는 것이 아니고, Subject 역할로부터 '전달'되는 것을 수동적으로 기다리고 있다. (Publish-Subscribe 발행/구독 패턴이라고도 한다.)
 - Observer 사용하면 사용하면 어떤 이점이 있을까?
   - Subject 클래스와 Observer 클래스가 서로 독립적으로 변경될 수 있어서, 각각 재사용할 수 있다.
 - java.util.Observer와 무엇이 다를까?
   - java.util.Observer 인터페이스는 public void update(Observable obj, Object arg)를 지원한다. 
   - Subject 역할을 하는 Observable(class)를 사용해야 되는데 단일 상속이기 때문에 Subject 역할을 하는 클래스가 이미 다른 클래스의 하위 클래스 일 경우 Observable로 사용할 수 없다.
 - 관련 패턴
-  - Mediator : Mediator 역할과 Colleague 역할의 통신에 OBserver 패턴을 사용하는 경우가 있다.
+  - Mediator : Mediator 역할과 Colleague 역할의 통신에 Observer 패턴을 사용하는 경우가 있다.
     - Mediator 패턴에서도 상태변화를 알리지만, 그것은 Colleague 역할의 조정이라는 목적으로 동작하고 있는 일부에 지나지 않는다.
     - Observer 패턴에서는 Subject 역할의 상태변화를 Observer 역할에게 알리는 일, 알려서 동기화를 이루는 일에 주안점을 두고 있다.
     
