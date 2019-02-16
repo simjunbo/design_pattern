@@ -350,13 +350,13 @@
 ![interpreter_uml_class_diagram svg](https://user-images.githubusercontent.com/7076334/47134744-cd18cb80-d2e8-11e8-8e4c-a41f0e0daebe.png)
 
 ## GOF에 의한 디자인 패턴의 분류
-  - 생성에 관한 패턴
+  - 생성에 관한 패턴 : 객체의 생성에 관련 패턴
     - Abstract Factory
     - Builder
     - Factory Method
     - Prototype
     - Singleton
-  - 구조에 관한 패턴
+  - 구조에 관한 패턴 : 클래스나 객체를 조합해 더 큰 구조를 만드는 패턴
     - Adapter
     - Bridge
     - Composite
@@ -364,7 +364,7 @@
     - Facade
     - Flayweight
     - Prxoy
-  - 행동에 관한 패턴
+  - 행동에 관한 패턴 : 객체나 클래스 사이의 알고히즘이나 책임 분배 관련된 패턴 (결합도 최소화)
     - Chain of Responsibility
     - Command
     - Interprter
@@ -376,3 +376,31 @@
     - Strategy
     - Template Method
     - Visitor
+
+## 클래스, 객체 패턴 분류
+  - 클래스 패턴 : 클래스 사이의 관계가 상속을 통해서 정의된다. (컴파일)
+    - Factory Method
+    - Adapter
+    - Template Method
+    - Interprter
+  - 객체 패턴 : 객체 사이의 관계를 다루며, 보통 구성을 통해서 정의된다. (런타임)
+    - Abstract Factory
+    - Builder
+    - Prototype
+    - Singleton
+    - Bridge
+    - Composite
+    - Decorator
+    - Facade
+    - Flayweight
+    - Prxoy
+    - Chain of Responsibility
+    - Command
+    - Iterator
+    - Mediator
+    - Memento
+    - Observer
+    - State
+    - Strategy
+    - Visitor
+    
