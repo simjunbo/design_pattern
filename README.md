@@ -362,7 +362,7 @@
     - Composite
     - Decorator
     - Facade
-    - Flayweight
+    - Flyweight
     - Prxoy
   - 행동에 관한 패턴 : 객체나 클래스 사이의 알고히즘이나 책임 분배 관련된 패턴 (결합도 최소화)
     - Chain of Responsibility
@@ -385,15 +385,15 @@
     - Interprter
   - 객체 패턴 : 객체 사이의 관계를 다루며, 보통 구성을 통해서 정의된다. (런타임)
     - Abstract Factory
-    - Adapter
     - Builder
     - Prototype
     - Singleton
+    - Adapter
     - Bridge
     - Composite
     - Decorator
     - Facade
-    - Flayweight
+    - Flyweight
     - Prxoy
     - Chain of Responsibility
     - Command
