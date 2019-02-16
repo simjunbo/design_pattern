@@ -385,6 +385,7 @@
     - Interprter
   - 객체 패턴 : 객체 사이의 관계를 다루며, 보통 구성을 통해서 정의된다. (런타임)
     - Abstract Factory
+    - Adapter
     - Builder
     - Prototype
     - Singleton
