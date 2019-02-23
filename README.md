@@ -404,5 +404,6 @@
     - State
     - Strategy
     - Visitor
-    
+
+## UML 
 ![uml](https://user-images.githubusercontent.com/7076334/53289444-5e3d0900-37d9-11e9-8855-9c263d990a03.png)
