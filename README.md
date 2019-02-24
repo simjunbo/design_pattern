@@ -22,7 +22,7 @@
 - Realization (실체화)
   - interface의 메서드를 오버라이딩하여 구체화 (implements)
 
-## Association, Dependency, Aggregation, Compostion 
+## Association, Dependency, Aggregation, Compostion 연관
 ![25717547586dd03137](https://user-images.githubusercontent.com/7076334/53299746-1e7e2c00-3882-11e9-8837-e117ba289e65.png)
 
 ## Iterator 패턴 (순서대로 지정해서 처리)
