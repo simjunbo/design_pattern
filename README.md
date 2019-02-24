@@ -8,7 +8,7 @@
   - Association과 차이점은 화살표(navigability) 유/무인데 참조 하는 쪽과 참조 당하는 쪽을 구분한다.
 - Aggregation (Shared Aggregation) (집합, 집합연관)
   - Composition과 함께 Association 관계를 좀더 특수하게 나타냄. 전체(whole)와 부분(part)의 관계를 나타낸다. (has a)
-  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이지 의미는 차이가 없다.)
+  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이)
 - Composition (Composition Aggregation) (합성, 복합연관)
   - Aggregation과 비슷하게 전체(whole)과 부분(part)의 관계를 나타내지만 개념적으로 더 강한 집합을 의미한다. (uses a)
   - 보통 포함하는 클래스와 포함되는 클래스의 생명주기가 동일하다. 
