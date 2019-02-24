@@ -22,6 +22,9 @@
 - Realization (실체화)
   - interface의 메서드를 오버라이딩하여 구체화 (implements)
 
+## Association, Dependency, Aggregation, Compostion 
+![25717547586dd03137](https://user-images.githubusercontent.com/7076334/53299746-1e7e2c00-3882-11e9-8837-e117ba289e65.png)
+
 ## Iterator 패턴 (순서대로 지정해서 처리)
 - Iterator 패턴이란, 무엇인가 많이 모여있는 것들을 순서대로 지정하면서 전체를 검색하는 처리를 실행하기 위한 것
 - for문을 이용하면 좋을텐데 왜 외부에 Iterator 역할 같은 것을 만들어서 사용 할까?
