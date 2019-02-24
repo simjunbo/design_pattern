@@ -5,6 +5,7 @@
 - Association (연관)
   - 다른 객체의 참조를 가지는 필드 (객체의 참조를 유지)
   - 참조 관계가 단방향, 역방향, 양방향 일 수 있다.
+  - 모든 객체가 각자의 라이프사이클을 가지고 있다.
 - DirectedAssociation (직접연관)
   - Association과 차이점은 화살표(navigability) 유/무인데 참조 하는 쪽과 참조 당하는 쪽을 구분한다.
 - Aggregation (Shared Aggregation) (집합, 집합연관)
