@@ -1,6 +1,7 @@
 
 ## UML (참고 : http://www.nextree.co.kr/p6753/)
 ![uml](https://user-images.githubusercontent.com/7076334/53289444-5e3d0900-37d9-11e9-8855-9c263d990a03.png)
+![untitled - paint_2012-10-04_19-24-12](https://user-images.githubusercontent.com/7076334/53299901-fee80300-3883-11e9-8fa1-82bd9fafe6b5.png)
 - Association (연관)
   - 다른 객체의 참조를 가지는 필드 (객체의 참조를 유지)
   - 참조 관계가 단방향, 역방향, 양방향 일 수 있다.
