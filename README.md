@@ -7,13 +7,11 @@
 - DirectedAssociation (직접연관)
   - Association과 차이점은 화살표(navigability) 유/무인데 참조 하는 쪽과 참조 당하는 쪽을 구분한다.
 - Aggregation (Shared Aggregation) (집합, 집합연관)
-  - Composition과 함께 Association 관계를 좀더 특수하게 나타냄. 전체(whole)과 부분(part)의 관계를 나타낸다.
-  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이)
+  - Composition과 함께 Association 관계를 좀더 특수하게 나타냄. 전체(whole)과 부분(part)의 관계를 나타낸다. (has a)
+  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이 의미는 차이가 없다.)
 - Composition (Composition Aggregation) (합성, 복합연관)
-  - Aggregation과 비슷하게 전체(whole)과 부분(part)의 관계를 나타내지만 개념적으로 더 강한 집합을 의미한다.
-  - 강한 집합이란 부분이 전체에 종속적이어서 전체의 소유이다. 반영 Aggregation은 부분이 전체에 대해 독립적이여서 전체가 부분을 빌려 쓰는 것과 비슷하다.
-    - 1) 부분(part)를 가지는 전체(whole) 인스턴스가 부분(part) 인스턴스의 전체 수명을 책임진다.
-    - 2) 부분(part)에 해당하는 인스턴스는 공유 될 수 없다. (deep copy 처리)
+  - Aggregation과 비슷하게 전체(whole)과 부분(part)의 관계를 나타내지만 개념적으로 더 강한 집합을 의미한다. (uses a)
+  - 보통 포함하는 클래스와 포함되는 클래스의 생명주기가 동일하다. 
 - Generalization (일반화)
   - 부모와 자식 클래스간의 상속관계 (extends)
   - 상속은 부모 클래스의 필드 및 메서드를 사용하며 자식 클래스에서 필드 및 메서드를 추가 하거나 메서드를 오버라이딩 하여 재정의 한다. 
