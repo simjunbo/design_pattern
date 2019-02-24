@@ -1,3 +1,27 @@
+
+## UML (참고 : http://www.nextree.co.kr/p6753/)
+![uml](https://user-images.githubusercontent.com/7076334/53289444-5e3d0900-37d9-11e9-8855-9c263d990a03.png)
+- Association (연관)
+  - 다른 객체의 참조를 가지는 필드 (객체의 참조를 유지)
+  - 참조 관계가 단방향, 역방향, 양방향 일 수 있다.
+- DirectedAssociation (직접연관)
+  - Association과 차이점은 화살표(navigability) 유/무인데 참조 하는 쪽과 참조 당하는 쪽을 구분한다.
+- Aggregation (Shared Aggregation) (집합, 집합연관)
+  - Composition과 함께 Association 관계를 좀더 특수하게 나타냄. 전체(whole)과 부분(part)의 관계를 나타낸다.
+  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이)
+- Composition (Composition Aggregation) (합성, 복합연관)
+  - Aggregation과 비슷하게 전체(whole)과 부분(part)의 관계를 나타내지만 개념적으로 더 강한 집합을 의미한다.
+  - 강한 집합이란 부분이 전체에 종속적이어서 전체의 소유이다. 반영 Aggregation은 부분이 전체에 대해 독립적이여서 전체가 부분을 빌려 쓰는 것과 비슷하다.
+- Generalization (일반화)
+  - 부모와 자식 클래스간의 상속관계 (extends)
+  - 상속은 부모 클래스의 필드 및 메서드를 사용하며 자식 클래스에서 필드 및 메서드를 추가 하거나 메서드를 오버라이딩 하여 재정의 한다. 
+- Dependency (의존)
+  - 클래스에서 다른 클래스를 참조
+  - 참조의 형태는 메서드 내에서 해당 클래스의 객체 생성, 객체 사용, 객체의 메서드 호출, 객체 리턴, 매개변수로 해당 객체를 받는 것 등을 말한다.
+  - 해당 객체의 참조를 계속 유지 하지 않는다. (association과 차이점)
+- Realization (실체화)
+  - interface의 메서드를 오버라이딩하여 구체화 (implements)
+
 ## Iterator 패턴 (순서대로 지정해서 처리)
 - Iterator 패턴이란, 무엇인가 많이 모여있는 것들을 순서대로 지정하면서 전체를 검색하는 처리를 실행하기 위한 것
 - for문을 이용하면 좋을텐데 왜 외부에 Iterator 역할 같은 것을 만들어서 사용 할까?
@@ -404,6 +428,3 @@
     - State
     - Strategy
     - Visitor
-
-## UML 
-![uml](https://user-images.githubusercontent.com/7076334/53289444-5e3d0900-37d9-11e9-8855-9c263d990a03.png)
