@@ -394,7 +394,7 @@
     - Facade
     - Flyweight
     - Prxoy
-  - 행동에 관한 패턴 : 객체나 클래스 사이의 알고히즘이나 책임 분배 관련된 패턴 (결합도 최소화)
+  - 행동에 관한 패턴 : 객체나 클래스 사이의 알고리즘이나 책임 분배 관련된 패턴 (결합도 최소화)
     - Chain of Responsibility
     - Command
     - Interprter
