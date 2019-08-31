@@ -1,5 +1,8 @@
 package decorator2;
 
+/**
+ * Concreate Decorator
+ */
 public class MilkCookie extends Decorator {
 
     public MilkCookie(Cookie cookie) {
@@ -7,6 +10,6 @@ public class MilkCookie extends Decorator {
     }
 
     public String getName() {
-        return "Milk " + cookie.getName();
+        return "Milk " + super.getName();
     }
 }

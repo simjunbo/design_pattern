@@ -5,9 +5,13 @@ package decorator2;
  */
 public abstract class Decorator implements Cookie {
 
-    protected Cookie cookie;
+    private Cookie cookie;
 
     public Decorator(Cookie cookie) {
         this.cookie = cookie;
+    }
+
+    public String getName() {
+        return cookie.getName();
     }
 }
