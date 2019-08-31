@@ -341,7 +341,7 @@
 - Proxy는 RealSubject가 필요해지면 그때 RealSubject를 생성한다.
 - Proxy 사용하면 사용하면 어떤 이점이 있을까?
   - 기동 시점에 이용하지 않는 기능을 전부 초기화하면, 어플리케이션의 기동에 시간이 많이 걸린다. 그래서 사용하는 단계 때 처음으로 초기화를 시키면 속도를 올릴 수 있다. (lazy loading)
-  - Proxy와 RealSubject를 분할해서 부품화를 만들면, 개별적옹르 수정 할 수 있다. (divide & conquer)
+  - Proxy와 RealSubject를 분할해서 부품화를 만들면, 개별적으로 수정 할 수 있다. (divide & conquer)
   - 지연 평가를 사용하고 싶지 않으면 Client에서 Proxy를 new 하지 않고 RealSubject를 new 하면 된다. (Subjecet interface를 공통으로 사용하기 때문에 가능)
   - HTTP Proxy를 사용하면 캐쉬해서 어떤 페이지를 대신 취득할 수 있다. 유효 시간이 지났을 때 웹 서버에서 웹 페이지를 가지러 간다.
 - Proxy 종류
