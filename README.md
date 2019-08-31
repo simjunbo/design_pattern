@@ -1,3 +1,33 @@
+
+## UML (참고 : http://www.nextree.co.kr/p6753/)
+![uml](https://user-images.githubusercontent.com/7076334/53289444-5e3d0900-37d9-11e9-8855-9c263d990a03.png)
+![untitled - paint_2012-10-04_19-24-12](https://user-images.githubusercontent.com/7076334/53299901-fee80300-3883-11e9-8fa1-82bd9fafe6b5.png)
+- Association (연관)
+  - 다른 객체의 참조를 가지는 필드 (객체의 참조를 유지)
+  - 참조 관계가 단방향, 역방향, 양방향 일 수 있다.
+  - 모든 객체가 각자의 라이프사이클을 가지고 있다.
+- DirectedAssociation (직접연관)
+  - Association과 차이점은 화살표(navigability) 유/무인데 참조 하는 쪽과 참조 당하는 쪽을 구분한다.
+- Aggregation (Shared Aggregation) (집합, 집합연관)
+  - Composition과 함께 Association 관계를 좀더 특수하게 나타냄. 전체(whole)와 부분(part)의 관계를 나타낸다. (has a)
+  - Association은 집합이라는 의미를 내포하지 않지만 Aggregation은 집합이라는 의미를 가진다. (개념적 차이)
+  - 보통 포함하는 클래스와 포함되는 클래스의 생명주기가 독립적이다.
+- Composition (Composition Aggregation) (합성, 복합연관)
+  - Aggregation과 비슷하게 전체(whole)과 부분(part)의 관계를 나타내지만 개념적으로 더 강한 집합을 의미한다. (uses a)
+  - 보통 포함하는 클래스와 포함되는 클래스의 생명주기가 동일하다. 
+- Generalization (일반화)
+  - 부모와 자식 클래스간의 상속관계 (extends)
+  - 상속은 부모 클래스의 필드 및 메서드를 사용하며 자식 클래스에서 필드 및 메서드를 추가 하거나 메서드를 오버라이딩 하여 재정의 한다. 
+- Dependency (의존)
+  - 클래스에서 다른 클래스를 참조
+  - 참조의 형태는 메서드 내에서 해당 클래스의 객체 생성, 객체 사용, 객체의 메서드 호출, 객체 리턴, 매개변수로 해당 객체를 받는 것 등을 말한다.
+  - 해당 객체의 참조를 계속 유지 하지 않는다. (Association과 차이점)
+- Realization (실체화)
+  - interface의 메서드를 오버라이딩하여 구체화 (implements)
+
+## Association, Dependency, Aggregation, Compostion 연관
+![25717547586dd03137](https://user-images.githubusercontent.com/7076334/53299746-1e7e2c00-3882-11e9-8837-e117ba289e65.png)
+
 ## Iterator 패턴 (순서대로 지정해서 처리)
 - Iterator 패턴이란, 무엇인가 많이 모여있는 것들을 순서대로 지정하면서 전체를 검색하는 처리를 실행하기 위한 것
 - for문을 이용하면 좋을텐데 왜 외부에 Iterator 역할 같은 것을 만들어서 사용 할까?
@@ -119,9 +149,9 @@
 - 클래스 계층의 두 가지 역할
   - 기능의 클래스 계층
   - 구현의 클래스 계층
-- 기능 클래스
+- 기능 클래스 (extends)
   - 상위 클래스는 기본적인 기능을 가지고 있다. 하위 클래스에서 새로운 기능을 추가한다.
-- 구현 클래스
+- 구현 클래스 (implments)
   - 상위 클래스는 추상 메소드에 의해 인터페이스를 규정한다. 하위 클래스는 구상 메소드에 의해 그 인터페이스를 구현한다.
 - 클래스 계층이 하나라면 기능의 클래스 계층과 구현의 클래스 계층이 하나의 계층구조 안에 혼재하게 된다.
   - '기능의 클래스 계층'과 '구현의 클래스 계층' 을 두 개의 독립된 클래스 계층으로 분리한다.
@@ -221,7 +251,7 @@
   - 핵심은 인터페이스(API)를 적게 하는 일이다. (클래스나 메소드가 많이 보이면, 프로그래머는 무엇을 사용하면 좋을지 망설이게 되고, 호출 하는 순서에도 주의해야한다.)
 - 관련 패턴
   - Abstract Factory : 오브젝트(객체) 생성이라는 복잡한 작업에 대해 Facade 패턴으로 간주할 수 있다.
-  - Singelton : Facade는 Singleton 패턴으로 만들어지는 경우가 있다. (유틸성)
+  - Singleton : Facade는 Singleton 패턴으로 만들어지는 경우가 있다. (유틸성)
   - Mediator : Facade 패턴은 높은 레벨인 인터페이스(API)를 만든다. Mediator 패턴에서 Mediator 역할은 Colleague 역할의 중개자로서 주고 받는 역할을 한다. Facade는 단방향이지만, Mediator 패턴은 쌍방향이다.
 
 ![b05180_01](https://user-images.githubusercontent.com/7076334/47022377-51a80480-d198-11e8-9684-625a37477470.png)
@@ -295,7 +325,7 @@
 ## Flyweight (동일한 것을 공유해서 낭비 없애기)
 - 이 디자인 패턴은 오브젝트를 '가볍게' 하기 위한 것이다. (메모리를 적게 사용하는 것이다.)
 - '인스턴스를 가능한 대로 공유시켜서 쓸데없이 new 하지 않도록 한다.' ex) Integer 내부에서 -128 ~ 127 까지 캐시 처리 해놓았다.
-- redis나 memcached 같은 메모리 캐시랑 다른 좀은 Flyweight는 동일 객체를 불러온다.
+- redis나 memcached 같은 메모리 캐시랑 다른 점은 Flyweight는 동일 객체를 불러온다.
 - Flyweight 사용하면 사용하면 어떤 이점이 있을까?
   - 객체 생성을 하는 리소스와 시간을 줄일 수 있기 때문에 성능 향상
   - 많은 객체를 만들때 메모리를 줄일 수 있다. (재귀)
@@ -362,12 +392,12 @@
     - Composite
     - Decorator
     - Facade
-    - Flayweight
+    - Flyweight
     - Prxoy
-  - 행동에 관한 패턴 : 객체나 클래스 사이의 알고히즘이나 책임 분배 관련된 패턴 (결합도 최소화)
+  - 행동에 관한 패턴 : 객체나 클래스 사이의 알고리즘이나 책임 분배 관련된 패턴 (결합도 최소화)
     - Chain of Responsibility
     - Command
-    - Interprter
+    - interpreter
     - Iterator
     - Mediator
     - Memento
@@ -382,18 +412,18 @@
     - Factory Method
     - Adapter
     - Template Method
-    - Interprter
+    - interpreter
   - 객체 패턴 : 객체 사이의 관계를 다루며, 보통 구성을 통해서 정의된다. (런타임)
     - Abstract Factory
-    - Adapter
     - Builder
     - Prototype
     - Singleton
+    - Adapter
     - Bridge
     - Composite
     - Decorator
     - Facade
-    - Flayweight
+    - Flyweight
     - Prxoy
     - Chain of Responsibility
     - Command
@@ -404,4 +434,3 @@
     - State
     - Strategy
     - Visitor
-    
