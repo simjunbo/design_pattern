@@ -251,7 +251,7 @@
   - 핵심은 인터페이스(API)를 적게 하는 일이다. (클래스나 메소드가 많이 보이면, 프로그래머는 무엇을 사용하면 좋을지 망설이게 되고, 호출 하는 순서에도 주의해야한다.)
 - 관련 패턴
   - Abstract Factory : 오브젝트(객체) 생성이라는 복잡한 작업에 대해 Facade 패턴으로 간주할 수 있다.
-  - Singelton : Facade는 Singleton 패턴으로 만들어지는 경우가 있다. (유틸성)
+  - Singleton : Facade는 Singleton 패턴으로 만들어지는 경우가 있다. (유틸성)
   - Mediator : Facade 패턴은 높은 레벨인 인터페이스(API)를 만든다. Mediator 패턴에서 Mediator 역할은 Colleague 역할의 중개자로서 주고 받는 역할을 한다. Facade는 단방향이지만, Mediator 패턴은 쌍방향이다.
 
 ![b05180_01](https://user-images.githubusercontent.com/7076334/47022377-51a80480-d198-11e8-9684-625a37477470.png)
