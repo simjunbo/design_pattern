@@ -3,7 +3,7 @@ package command2;
 public class Client {
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp(); // receiver
-		LampOnCommand lampOnCommand = new LampOnCommand(lamp); // concreteCommand
+		LampOnCommand lampOnCommand = new LampOnCommand(lamp); // concreteCommand (receiver di)
 
 		Alarm alarm = new Alarm();
 		AlarmStartCommand alarmStartCommand = new AlarmStartCommand(alarm);
