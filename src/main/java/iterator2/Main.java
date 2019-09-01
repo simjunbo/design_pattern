@@ -9,7 +9,6 @@ public class Main {
         ((BookAggregate) aggregate).add(book);
         ((BookAggregate) aggregate).add(book2);
 
-
         Iterator iterator = new BookIterator(aggregate);
 
         while (iterator.hasNext()) {
