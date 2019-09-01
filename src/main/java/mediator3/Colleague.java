@@ -1,5 +1,8 @@
 package mediator3;
 
+/**
+ * Colleauge
+ */
 public abstract class Colleague {
 	protected Mediator mediator;
 	protected String name;
